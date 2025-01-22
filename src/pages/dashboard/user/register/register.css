@@ -1,0 +1,220 @@
+.card32{
+    
+    width: 40%;
+    color: black;
+}
+
+.register{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top :200px;
+    
+}
+.card1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    width: 100%;
+}
+.f1{
+    
+border-radius: 60px;
+border-bottom-width: 5px;
+border-bottom-style:inset;
+border-bottom-color:#aa0478 ;
+border-left: 5px;
+border-left-style:inset;
+border-left-color:#aa0478 ;
+}
+
+
+.title
+{
+    font-size: 30px;
+    font-weight: 1000;
+    color: #fcf7f7;
+    text-align: center;
+
+    
+}
+
+.btn1 {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    overflow: hidden;
+    height: 3rem;
+    background-size: 300% 300%;
+    cursor: pointer;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#6d0370, #3d032f),
+      linear-gradient(
+        137.48deg,
+        #aa0478 10%,
+        #80055b 45%,
+        #81035b 67%,
+        #470333 87%
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars1 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+  }
+  
+  strong {
+    z-index: 2;
+    font-family: "Avalors Personal Use";
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 4px white;
+  }
+  
+  #glow1 {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle1 {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle1:nth-of-type(1) {
+    background: rgba(192, 2, 192, 0.74);
+  }
+  
+  .circle1:nth-of-type(2) {
+    background: rgb(243, 3, 223);
+  }
+  
+  .btn1:hover #container-stars1 {
+    z-index: 1;
+    background-color: #212121;
+  }
+  
+  .btn1:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn1:active {
+    border: double 4px #fe53bb;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btn1:active .circle {
+    background: #fe53bb;
+  }
+  
+  #stars1 {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars1::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars1::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars1::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
